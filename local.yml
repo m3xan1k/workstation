@@ -1,0 +1,62 @@
+---
+- hosts: localhost
+  become: True
+
+  tasks:
+    - name: Add anydesk apt-key
+      apt_key:
+        url: https://keys.anydesk.com/repos/DEB-GPG-KEY
+        state: present
+
+    - name: Add third party repos
+      apt_repository:
+        repo: "{{item}}"
+        state: present
+      loop:
+        - "ppa:philip.scott/elementary-tweaks"
+        - "ppa:ubuntu-mozilla-daily/firefox-aurora"
+        - "deb http://deb.anydesk.com/ all main"
+
+    - name: Update apt cache
+      apt:
+        update_cache: yes
+
+    - name: Install packages
+      apt:
+        pkg:
+          - software-properties-common
+          - software-properties-gtk
+          - ubuntu-restricted-extras
+          - filezilla
+          - python3.8
+          - python3.8-dev
+          - python3.8-dbg
+          - python3-pip
+          - vim
+          - neovim
+          - gnome-shell-pomodoro
+          - anydesk
+          - tilix
+          - keepass2
+          - obs-studio
+          - virtualbox
+          - vlc
+        state: present
+
+    - name: Install deb packages from the internet
+      apt:
+        deb: 
+
+    - name: Add local bin to PATH
+      lineinfile:
+        path: /home/m3xan1k/.bashrc
+        line: export PATH="${HOME}/.local/bin:$PATH"
+
+    - name: Install pipenv
+      pip:
+        name: 
+          - pipenv
+          - neovim
+          - flake8
+        executable: pip3
+
