@@ -5,17 +5,21 @@
   tasks:
     - name: Add anydesk apt-key
       apt_key:
-        url: https://keys.anydesk.com/repos/DEB-GPG-KEY
+        url: "{{item}}"
         state: present
+      loop:
+        - https://download.docker.com/linux/ubuntu/GPG
+        - https://keys.anydesk.com/repos/DEB-GPG-KEY
 
     - name: Add third party repos
       apt_repository:
         repo: "{{item}}"
         state: present
       loop:
-        - "ppa:philip.scott/elementary-tweaks"
         - "ppa:ubuntu-mozilla-daily/firefox-aurora"
         - "deb http://deb.anydesk.com/ all main"
+        - "ppa:atareao/atareao"
+        - "deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable"
 
     - name: Update apt cache
       apt:
@@ -41,11 +45,23 @@
           - obs-studio
           - virtualbox
           - vlc
+          - transmission-qt
+          - my-weather-inidicator
+          - apt-transport-https
+          - ca-certificates
+          - curl
+          - software-properties-common
+          - docker-ce
         state: present
 
-    - name: Install deb packages from the internet
+    - name: Install slack
       apt:
-        deb: 
+        deb: https://downloads.slack-edge.com/linux_releases/slack-desktop-4.4.3-amd64.deb
+
+    - name: Download telegram
+      get_url:
+        url: https://telegram.org/dl/desktop/linux
+        dest: /home/m3xan1k/Downloads/telegram.tar.xz
 
     - name: Add local bin to PATH
       lineinfile:
@@ -59,4 +75,18 @@
           - neovim
           - flake8
         executable: pip3
+
+    - name: Add user to docker group, generate ssh keys
+      user:
+        name: m3xan1k
+        groups: docker
+        append: yes
+        generate_ssh_keys: yes
+        ssh_key_bits: 2048
+        ssh_key_file: /home/m3xan1k/.ssh/id_rsa
+
+    - name: Install docker-compose
+      raw: curl -L https://github.com/docker/compose/releases/download/1.21.2/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose && chmod +x /usr/local/bin/docker-docker-compose
+
+
 
