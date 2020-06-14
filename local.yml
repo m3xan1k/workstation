@@ -8,7 +8,7 @@
         url: "{{item}}"
         state: present
       loop:
-        - https://download.docker.com/linux/ubuntu/GPG
+        - https://download.docker.com/linux/ubuntu/gpg
         - https://keys.anydesk.com/repos/DEB-GPG-KEY
 
     - name: Add third party repos
