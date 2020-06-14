@@ -55,6 +55,7 @@
           - software-properties-common
           - docker-ce
         state: present
+      ignore_errors: yes
 
     - name: Install slack
       apt:
