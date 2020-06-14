@@ -48,7 +48,6 @@
           - virtualbox
           - vlc
           - transmission-qt
-          - my-weather-inidicator
           - apt-transport-https
           - ca-certificates
           - curl
