@@ -15,6 +15,7 @@
       apt_repository:
         repo: "{{item}}"
         state: present
+        validate_certs: no
       loop:
         - "ppa:ubuntu-mozilla-daily/firefox-aurora"
         - "deb http://deb.anydesk.com/ all main"
