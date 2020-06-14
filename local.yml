@@ -21,6 +21,7 @@
         - "deb http://deb.anydesk.com/ all main"
         - "ppa:atareao/atareao"
         - "deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable"
+      ignore_errors: yes
 
     - name: Update apt cache
       apt:
