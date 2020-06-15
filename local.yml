@@ -50,6 +50,7 @@
           - ca-certificates
           - curl
           - docker-ce
+          - docker-compose
         state: present
       ignore_errors: yes
 
@@ -84,9 +85,4 @@
         generate_ssh_key: yes
         ssh_key_bits: 2048
         ssh_key_file: /home/m3xan1k/.ssh/id_rsa
-
-    - name: Install docker-compose
-      raw: curl -L https://github.com/docker/compose/releases/download/1.21.2/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose && chmod +x /usr/local/bin/docker-docker-compose
-
-
 
