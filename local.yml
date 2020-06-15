@@ -69,6 +69,7 @@
     - name: Install pipenv
       pip:
         name: 
+          - setuptools
           - pipenv
           - neovim
           - flake8
