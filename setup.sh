@@ -9,7 +9,7 @@ fi
 sudo apt update
 
 # install utils
-sudo apt install -y curl software-properties-gtk ubuntu-restricted-extras filezilla vim neovim gnome-shell-pomodoro tilix keepass2 obs-studio virtualbox vlc transmission-qt apt-transport-https ca-certificates build-essential software-properties-common python3.10 python3.10-dev fonts-firacode
+sudo apt install -y curl software-properties-gtk ubuntu-restricted-extras filezilla vim neovim gnome-shell-pomodoro tilix keepass2 obs-studio virtualbox vlc transmission-qt apt-transport-https ca-certificates build-essential software-properties-common python3.10 python3.10-dev fonts-firacode gnome-tweaks
 
 # install docker
 sudo apt install -y docker.io
