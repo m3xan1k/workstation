@@ -6,6 +6,10 @@ then
     exit 0
 fi
 
+# add python repo
+echo | sudo add-apt-repository ppa:deadsnakes/ppa
+
+# update cache
 sudo apt update
 
 # install utils
