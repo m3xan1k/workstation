@@ -13,7 +13,10 @@ echo | sudo add-apt-repository ppa:deadsnakes/ppa
 sudo apt update
 
 # install utils
-sudo apt install -y curl software-properties-gtk ubuntu-restricted-extras filezilla vim neovim gnome-shell-pomodoro tilix keepass2 obs-studio virtualbox vlc transmission-qt apt-transport-https ca-certificates build-essential software-properties-common python3.10 python3.10-dev fonts-firacode gnome-tweaks
+sudo apt install -y curl software-properties-gtk ubuntu-restricted-extras filezilla vim neovim \
+    gnome-shell-pomodoro tilix keepass2 obs-studio virtualbox vlc transmission-qt apt-transport-https \
+    ca-certificates build-essential software-properties-common python3.10 python3.10-dev fonts-firacode \
+    gnome-tweaks network-manager-l2tp network-manager-l2tp-gnome
 
 # install docker
 sudo apt install -y docker.io
@@ -27,7 +30,7 @@ sudo chmod +x /usr/local/bin/docker-compose
 # download and exttract telegram
 echo "Downloading telegram"
 curl -L https://telegram.org/dl/desktop/linux -o ${HOME}/Downloads/telegram.tar.xz
-tar -zxvf ${HOME}/Downloads/telegram.tar.xz
+tar -xvf ${HOME}/Downloads/telegram.tar.xz
 
 # download and install vscode
 echo "Downloading vscode"
