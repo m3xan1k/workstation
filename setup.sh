@@ -7,7 +7,7 @@ then
 fi
 
 # add python repo
-echo | sudo add-apt-repository ppa:deadsnakes/ppa
+sudo add-apt-repository -y ppa:deadsnakes/ppa
 
 # update cache
 sudo apt update
@@ -16,7 +16,7 @@ sudo apt update
 sudo apt install -y curl software-properties-gtk ubuntu-restricted-extras filezilla vim neovim \
     gnome-shell-pomodoro tilix keepass2 obs-studio virtualbox vlc transmission-qt apt-transport-https \
     ca-certificates build-essential software-properties-common python3.10 python3.10-dev fonts-firacode \
-    gnome-tweaks network-manager-l2tp network-manager-l2tp-gnome
+    gnome-tweaks network-manager-l2tp network-manager-l2tp-gnome python3-pip
 
 # install docker
 sudo apt install -y docker.io
