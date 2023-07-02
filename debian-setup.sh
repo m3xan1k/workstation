@@ -63,7 +63,8 @@ sudo apt install \
     tmux \
     nemo-font-manager \
     speech-dispatcher \
-    mate-calc
+    mate-calc \
+    resolvconf
 
 # ly
 git clone --recurse-submodules https://github.com/fairyglade/ly ~/software/ly
