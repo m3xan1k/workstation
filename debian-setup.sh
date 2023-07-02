@@ -118,6 +118,9 @@ echo "Installing wallpapers..."
 mkdir ~/.wallpapers
 cp -R ~/software/ghostbsd-wallpapers/ ~/.wallpapers/
 
+# nerdfonts
+# https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.2/NerdFontsSymbolsOnly.zip
+
 # Building Neovim
 # https://github.com/neovim/neovim/wiki/Building-Neovim
 
