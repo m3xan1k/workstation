@@ -94,9 +94,7 @@ git clone git@github.com:m3xan1k/st.git ~/software/st
 git clone git@github.com:m3xan1k/tabbed.git ~/software/tabbed
 
 # alacritty
-git clone https://github.com/alacritty/alacritty.git ~/software/alacritty
-# cd ~/software/alacritty
-# cargo build --release
+cargo install alacritty
 
 # golang
 curl -L -O https://go.dev/dl/go1.20.5.linux-amd64.tar.gz
