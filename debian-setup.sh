@@ -60,7 +60,8 @@ sudo apt install \
     libfontconfig1-dev \
     libxcb-xfixes0-dev \
     libxkbcommon-dev \
-    tmux
+    tmux \
+    nemo-font-manager
 
 # ly
 git clone --recurse-submodules https://github.com/fairyglade/ly ~/software/ly
