@@ -180,3 +180,6 @@ echo "install python version from sources on https://www.python.org/downloads/"
 # make -j 4
 # sudo make altinstall
 # python3.8 --version
+
+# yandex-disk
+# https://yandex.ru/support/disk-desktop-linux/installation.html
