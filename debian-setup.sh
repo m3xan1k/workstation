@@ -1,14 +1,22 @@
 sudo apt update && sudo apt upgrade
 
 sudo apt install \
-    cinnamon-core \
-    gnome-system-monitor \
+    mate-desktop-environment-core \
+    mate-tweak \
+    caja-open-terminal \
+    mate-media \
+    pulseaudio \
+    mate-calc \
+    nm-tray \
+    dconf-cli \
+    xorg \
+    x11-common \
+    xfce4-taskmanager \
     firefox-esr \
     git \
     libncurses-dev \
     xclip \
     xsel \
-    rofi \
     neofetch \
     ripgrep \
     fzf \
@@ -44,7 +52,6 @@ sudo apt install \
     python3-rich \
     libpam0g-dev \
     libxcb-xkb-dev \
-    git \
     fonts-ricty-diminished \
     nodejs \
     npm \
@@ -61,9 +68,7 @@ sudo apt install \
     libxcb-xfixes0-dev \
     libxkbcommon-dev \
     tmux \
-    nemo-font-manager \
     speech-dispatcher \
-    mate-calc \
     resolvconf
 
 # ly
