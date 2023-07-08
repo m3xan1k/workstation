@@ -20,7 +20,6 @@ sudo apt install \
     ripgrep \
     fzf \
     wireguard \
-    chromium \
     filezilla \
     keepass2 \
     evince \
