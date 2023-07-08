@@ -7,10 +7,9 @@ sudo apt install \
     mate-media \
     pulseaudio \
     mate-calc \
-    nm-tray \
+    network-manager-gnome \
     dconf-cli \
     xorg \
-    x11-common \
     xfce4-taskmanager \
     firefox-esr \
     git \
@@ -40,14 +39,11 @@ sudo apt install \
     curl \
     clangd-15 \
     fonts-noto-core \
-    libreoffice \
     lz4 \
     build-essential \
     vim \
-    obs-studio \
     ca-certificates \
     gnupg \
-    sassc \
     iptables \
     python3-rich \
     libpam0g-dev \
