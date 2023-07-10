@@ -2,15 +2,10 @@ sudo apt update && sudo apt upgrade
 
 sudo apt install \
     mate-desktop-environment-core \
-    mate-tweak \
-    caja-open-terminal \
-    mate-media \
-    pulseaudio \
-    mate-calc \
+    mate-desktop-environment-extra \
     network-manager-gnome \
     dconf-cli \
     xorg \
-    xfce4-taskmanager \
     firefox-esr \
     git \
     libncurses-dev \
@@ -22,7 +17,6 @@ sudo apt install \
     wireguard \
     filezilla \
     keepass2 \
-    evince \
     mpv \
     flameshot \
     git-cola \
@@ -91,13 +85,6 @@ pipx install flake8
 pipx install pipenv
 pipx install ipython
 
-# software
-mkdir ~/software
-git clone git@github.com:m3xan1k/st.git ~/software/st
-git clone git@github.com:m3xan1k/tabbed.git ~/software/tabbed
-
-# alacritty
-cargo install alacritty
 
 # golang
 curl -L -O https://go.dev/dl/go1.20.5.linux-amd64.tar.gz
