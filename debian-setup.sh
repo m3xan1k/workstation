@@ -4,7 +4,6 @@ sudo apt install \
     mate-desktop-environment-core \
     mate-desktop-environment-extra \
     network-manager-gnome \
-    dconf-cli \
     xorg \
     firefox-esr \
     git \
