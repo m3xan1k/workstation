@@ -17,6 +17,7 @@ sudo apt install \
     filezilla \
     keepass2 \
     mpv \
+    vlc \
     flameshot \
     git-cola \
     viewnior \
