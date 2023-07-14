@@ -1,13 +1,8 @@
 sudo apt update && sudo apt upgrade
 
 sudo apt install \
-    gnome-session \
-    gnome-terminal \
-    gnome-tweaks \
-    gnome-font-viewer \
+    dconf-cli \
     dconf-editor \
-    nautilus \
-    nautilus-extension-gnome-terminal \
     firefox-esr \
     git \
     libncurses-dev \
@@ -59,7 +54,9 @@ sudo apt install \
     libxkbcommon-dev \
     tmux \
     speech-dispatcher \
-    resolvconf
+    resolvconf \
+    libpam0g-dev \
+    libxcb-xkb-dev
 
 # c language server
 sudo ln -s /usr/bin/clangd-15 /usr/bin/clangd
