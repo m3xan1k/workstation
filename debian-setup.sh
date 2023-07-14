@@ -4,6 +4,7 @@ sudo apt install \
     gnome-session \
     gnome-terminal \
     gnome-tweaks \
+    gnome-font-viewer \
     dconf-editor \
     nautilus \
     nautilus-extension-gnome-terminal \
