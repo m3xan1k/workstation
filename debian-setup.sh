@@ -1,10 +1,12 @@
 sudo apt update && sudo apt upgrade
 
 sudo apt install \
-    mate-desktop-environment-core \
-    mate-desktop-environment-extra \
-    network-manager-gnome \
-    xorg \
+    gnome-session \
+    gnome-terminal \
+    gnome-tweaks \
+    dconf-editor \
+    nautilus \
+    nautilus-extension-gnome-terminal \
     firefox-esr \
     git \
     libncurses-dev \
@@ -39,8 +41,6 @@ sudo apt install \
     gnupg \
     iptables \
     python3-rich \
-    libpam0g-dev \
-    libxcb-xkb-dev \
     fonts-ricty-diminished \
     nodejs \
     npm \
@@ -59,10 +59,6 @@ sudo apt install \
     tmux \
     speech-dispatcher \
     resolvconf
-
-# ly
-git clone --recurse-submodules https://github.com/fairyglade/ly ~/software/ly
-
 
 # c language server
 sudo ln -s /usr/bin/clangd-15 /usr/bin/clangd
@@ -150,12 +146,6 @@ echo "Install rust manually run: curl --proto '=https' --tlsv1.2 -sSf https://sh
 # rust
 # curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
-# ly
-echo "Install ly"
-echo "cd ~/software/ly"
-echo "make"
-echo "sudo make install installsystemd"
-echo "sudo systemctl enable ly.service"
 
 # grub
 echo "clean grub background"
