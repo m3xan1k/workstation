@@ -87,21 +87,17 @@ curl -L -O https://go.dev/dl/go1.20.5.linux-amd64.tar.gz
 sudo tar -C /usr/local -xzf go1.20.5.linux-amd64.tar.gz
 
 # VIMIX theme
-git clone https://github.com/ghostbsd/ghostbsd-wallpapers ~/software/ghostbsd-wallpapers
-git clone https://github.com/ghostbsd/ghostbsd-mate-themes.git ~/software/ghostbsd-mate-themes
-git clone https://github.com/ghostbsd/ghostbsd-icons.git ~/software/ghostbsd-icons
+git clone https://github.com/m3xan1k/ghostbsd-wallpapers ~/soft/ghostbsd-wallpapers
+git clone https://github.com/m3xan1k/ghostbsd-mate-themes.git ~/soft/ghostbsd-mate-themes
+git clone https://github.com/m3xan1k/ghostbsd-icons.git ~/soft/ghostbsd-icons
 
 echo "Installing themes..."
     if [ ! -d ~/.themes ]; then     mkdir ~/.themes; fi
-cp -R ~/software/ghostbsd-mate-themes/themes/* ~/.themes
+cp -R ~/soft/ghostbsd-mate-themes/themes/* ~/.themes
 
 echo "Installing icons..."
     if [ ! -d ~/.local/share/icons ]; then   mkdir ~/.local/share/icons; fi
-cp -R ~/software/ghostbsd-icons/icons/* ~/.local/share/icons
-
-echo "Installing wallpapers..."
-mkdir ~/.wallpapers
-cp -R ~/software/ghostbsd-wallpapers/ ~/.wallpapers/
+cp -R ~/soft/ghostbsd-icons/icons/* ~/.local/share/icons
 
 # nerdfonts
 # https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.2/NerdFontsSymbolsOnly.zip
