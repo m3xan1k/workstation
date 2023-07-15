@@ -95,7 +95,7 @@ cp -R ~/soft/ghostbsd-mate-themes/themes/* ~/.themes
 
 echo "Installing icons..."
     if [ ! -d ~/.local/share/icons ]; then   mkdir ~/.local/share/icons; fi
-cp -R ~/soft/ghostbsd-icons/icons/* ~/.local/share/icons
+cp -R ~/soft/ghostbsd-icons/icons/* ~/.icons
 
 # nerdfonts
 # https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.2/NerdFontsSymbolsOnly.zip
