@@ -94,7 +94,7 @@ echo "Installing themes..."
 cp -R ~/soft/ghostbsd-mate-themes/themes/* ~/.themes
 
 echo "Installing icons..."
-    if [ ! -d ~/.icons ]; then   mkdir ~/.local/share/icons; fi
+    if [ ! -d ~/.icons ]; then   mkdir ~/.icons; fi
 cp -R ~/soft/ghostbsd-icons/icons/* ~/.icons
 
 # nerdfonts
