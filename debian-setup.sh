@@ -1,6 +1,9 @@
 sudo apt update && sudo apt upgrade
 
 sudo apt install \
+    mate-core \
+    xorg \
+    lightdm \
     dconf-cli \
     dconf-editor \
     firefox-esr \
@@ -55,8 +58,13 @@ sudo apt install \
     tmux \
     speech-dispatcher \
     resolvconf \
-    libpam0g-dev \
-    libxcb-xkb-dev
+    lightdm-settings \
+    zip \
+    unzip \
+    engrampa \
+    gstreamer1.0-plugins-ugly \
+    caja-open-terminal \
+    mate-system-monitor
 
 # c language server
 sudo ln -s /usr/bin/clangd-15 /usr/bin/clangd
@@ -64,11 +72,9 @@ sudo ln -s /usr/bin/clangd-15 /usr/bin/clangd
 # dotfiles and links
 git clone git@github.com:m3xan1k/dotfiles.git
 
-ln -s ~/dotfiles/gitconfig ~/.gitconfig
-ln -s ~/dotfiles/gitignore ~/.gitignore
-ln -s ~/dotfiles/tmux.conf ~/.tmux.conf
-rm ~/.bashrc
-ln -s ~/dotfiles/bashrc ~/.bashrc
+# rm ~/.bashrc
+# cd ~/dotfiles
+# ./links.sh
 
 # pyradio
 wget https://raw.githubusercontent.com/coderholic/pyradio/master/pyradio/install.py
