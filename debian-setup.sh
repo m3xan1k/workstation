@@ -108,6 +108,12 @@ cp -R ~/soft/ghostbsd-icons/icons/* ~/.icons
 
 # Building Neovim
 # https://github.com/neovim/neovim/wiki/Building-Neovim
+# git clone https://github.com/neovim/neovim
+# cd neovim
+# git checkout stable
+# make CMAKE_BUILD_TYPE=RelWithDebInfo
+# cd build && cpack -G DEB && sudo dpkg -i nvim-linux64.deb
+
 
 # nvim
 git clone git@github.com:m3xan1k/nvim.git ~/.config/nvim
