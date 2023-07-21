@@ -140,8 +140,27 @@ sudo dpkg -i ./containerd.io_1.6.21-1_amd64.deb \
 sudo npm install -g pyright
 
 # dbgate
-curl -L -O https://github.com/dbgate/dbgate/releases/download/v5.2.6/dbgate-5.2.6-linux_amd64.deb
-sudo dpkg -i dbgate-5.2.6-linux_amd64.deb
+# curl -L -O https://github.com/dbgate/dbgate/releases/download/v5.2.6/dbgate-5.2.6-linux_amd64.deb
+# sudo dpkg -i dbgate-5.2.6-linux_amd64.deb
+
+# sequeler instead electron based dbgate
+sudo apt install \
+    libgranite-dev \
+    libglib2.0-dev \
+    libcairo-gobject2 \
+    libgee-0.8-dev \
+    libxml2-dev \
+    libgda-5.0-dev \
+    libgtksourceview-3.0-dev \
+    libsecret-1-dev \
+    libssh2-1-dev \
+    meson \
+    valac
+
+git clone https://github.com/Alecaddd/sequeler.git ~/soft/sequeler
+# cd sequeler
+# meson build --prefix=/usr
+# sudo ninja -C build install
 
 # insomnia
 curl -L -O https://github.com/Kong/insomnia/releases/download/core@2023.2.2/Insomnia.Core-2023.2.2.deb
