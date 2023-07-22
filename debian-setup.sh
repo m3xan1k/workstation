@@ -139,10 +139,6 @@ sudo dpkg -i ./containerd.io_1.6.21-1_amd64.deb \
 # pyright
 sudo npm install -g pyright
 
-# dbgate
-# curl -L -O https://github.com/dbgate/dbgate/releases/download/v5.2.6/dbgate-5.2.6-linux_amd64.deb
-# sudo dpkg -i dbgate-5.2.6-linux_amd64.deb
-
 # sequeler instead electron based dbgate
 sudo apt install \
     libgranite-dev \
@@ -155,7 +151,8 @@ sudo apt install \
     libsecret-1-dev \
     libssh2-1-dev \
     meson \
-    valac
+    valac \
+    libgda-5.0-*
 
 git clone https://github.com/Alecaddd/sequeler.git ~/soft/sequeler
 # cd sequeler
